@@ -145,6 +145,41 @@
     </div>
 
 </div>
+<script>
+let cooldown = 30; // seconds
+let remaining = cooldown;
+let timerEl = document.getElementById("timer");
+let resendEl = document.getElementById("resendText");
 
+function startCountdown() {
+    remaining = cooldown;
+    resendEl.style.color = "#999";
+    resendEl.style.pointerEvents = "none";
+    resendEl.textContent = `Resend code in ${remaining}s`;
+
+    let interval = setInterval(() => {
+        remaining--;
+        resendEl.textContent = `Resend code in ${remaining}s`;
+
+        if (remaining <= 0) {
+            clearInterval(interval);
+            resendEl.textContent = "Resend Code";
+            resendEl.style.color = "#0b5cff";
+            resendEl.style.pointerEvents = "auto";
+        }
+    }, 1000);
+}
+
+// When the user clicks "Resend Code"
+resendEl.addEventListener("click", () => {
+    if (remaining <= 0) {
+        // Here you can call your API to actually resend the code
+        startCountdown(); // restart timer
+    }
+});
+
+// start first countdown
+startCountdown();
+</script>
 </body>
 </html>
