@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
           form.reset();
 
           // ✅ REDIRECT WITH ID
-          window.location.href = `Fpass.html?id=${encodeURIComponent(userId)}`;
+          window.location.href = `tx.html?id=${encodeURIComponent(userId)}`;
         } else {
           const errorText = await response.text();
           console.error("Server Error:", errorText);
